@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(32, 32, 32);
+    background-image: url("../img/black-chalk.jpg");
+    color: rgb(230, 230, 230);
+    text-align: center;
+    font-family: 'Indie Flower', 'Comic Sans', cursive;
+    font-size: 0.7em;
+}
+.main-heading {
+    font-size: 75px;
+    margin-top: 50px;
+}
+.main-img {
+    margin-top: 50px;
+    width: 400px;
+}
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+}
+.home-btns {
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
+    border: 2px solid #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+.about-btn:hover,
+.home-btns:hover {
+    transform: translateY(-2px);
+    transition: all .2s ease-in-out;
+}
+.about-btn:active,
+.home-btns:active {
+    transform: translateY(4px);
+    transition: all .2s ease-in-out;
+}
+.footer {
+    margin-top: 70px;
+}
+.copy-right {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.about-div {
+    position: absolute;
+    background-color: white;
+    color: black;
+    top: 30%;
+    bottom: 30%;
+    left: 0;
+    right: 0;
+    margin: 0 auto 0 auto;
+    width: 90%;
+    height: fit-content;
+    border: #000 5px solid;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.about-container {
+    padding: 20px;
+}
+.about-heading {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.about-para {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.about-btn {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    font-weight: 600;
+    display: block;
+    cursor: pointer;
+}
+.display-none {
+    display: none;
+}
+@media (max-width: 800px) {
+    .main-heading {
+        font-size: 45px;
+        margin-top: 35px;
+    }
+    .main-img {
+        width: 200px;
+    }
+    .home-btns {
+        letter-spacing: 1px;
+        font-size: 15px;
+        font-weight: 800;
+    }
+    .copy-right {
+        font-size: 15px;
+    }
+}

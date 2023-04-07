@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/game.css">
+    <link rel="shortcut icon" href="img/tic-tac-toe.png" type="image/x-icon">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+  <div class="outer">
+      <div class="middle">
+        <div class="inner-pri">
+          <div class="result-div">
+            <h1 class="result-display">Result: <span class="result" id="result-display"></span></h1>
+          </div>
+        </div>
+        <div class="inner">
+          <div class="flex-container">
+            <div class="container"></div>
+            <div class="container"></div>
+            <div class="container"></div>
+            <div class="container"></div>
+            <div class="container"></div>
+            <div class="container"></div>
+            <div class="container"></div>
+            <div class="container"></div>
+            <div class="container"></div>
+          </div>
+        </div>
+        <div class="inner-sec">
+          <div class="turns-container">
+            <h1 class="turns">Turn : <span class="turn-span" id="turn-span"></span></h1>
+          </div>
+          <div class="btns">
+            <button class="x" id="xchoice">x</button>
+            <button class="o" id="ochoice">0</button>
+          </div>
+          <div class="restart-container">
+            <button class="restart x" id="restart-btn">Restart</button>
+            <a class="restart-a restart x" href="index.html">Back !</a>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="app/game.js"></script>
+</body>
+</html>

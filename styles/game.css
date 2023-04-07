@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(32, 32, 32);
+    background-image: url("../img/black-chalk.jpg");
+    color: rgb(230, 230, 230);
+    text-align: center;
+    font-family: 'Indie Flower', 'Comic Sans', cursive;
+    font-size: 0.7em;
+}
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}  
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 304px;
+    height: 304px;
+}  
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 304px;
+    height: 304px;
+    border: 2px solid #fff;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+}
+.circle {
+    width: 65px;
+    height: 65px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+.square {
+    width: 60px;
+    height: 60px;
+    border: 4px solid #fff;
+}
+.inner-sec {
+    margin-top: 80px;
+}
+.inner-pri {
+    margin-bottom: 100px;
+}
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    margin-bottom: 50px;
+}
+.x,
+.o {
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid #fff;
+    text-align: center;
+}
+.x:hover,
+.o:hover {
+    transform: translateY(-2px);
+    transition: all .2s ease-in-out;
+}
+.x:active,
+.o:active {
+    transform: translateY(4px);
+    transition: all .2s ease-in-out;
+}
+.restart {
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.red {
+    color: red;
+}
+.green {
+    color: green;
+}
+.turns-container {
+    margin-bottom: 50px;
+}
+.result-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.restart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.4rem;
+}
+.restart-a {
+    text-decoration: none;
+    font-family: 'cursive', sans-serif;
+}
+@media (max-width: 800px) {
+    .outer {
+        padding: 20px 0px;
+    }
+    .inner-pri {
+        margin-bottom: 30px;
+    }
+    .inner-sec {
+        margin-top: 30px;
+    }
+    .btns {
+        margin-bottom: 25px;
+    }
+    .turns-container {
+        margin-bottom: 25px;
+    }
+    .result-display {
+        max-width: 250px;
+    }
+}
